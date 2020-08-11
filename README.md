@@ -26,71 +26,79 @@ of the above operations on a stack
 
 ### How to run 🏃 ?
 
-Just run `make`
-or if you have a lot of time
+Just `make`
+or maybe you have a lot of time
 ```
-nasm -f elf64 stack.asm # assemble the program
-ld -s -o stack stack.o # link the object file nasm produced into an executable file
-./stack # stack is an executable file
+nasm -f elf64 stk.asm # assemble the program
+ld -s -o stk stk.o # link the object file nasm produced into an executable file
+./stk # stk is an executable file
 ```
-
-![img](https://raw.githubusercontent.com/sangarshana/stkmachine.asm/master/img/addition.png)
 
 ### Addition
 
-./stk "+" a b
+`./stk "+" a` b
+
 No more fingers for addition !! 
 
 ### Subtraction
 
-./stk "-" a b
+`./stk "-" a` b
+
 Subtraction 
 
 
 ### Negative
 
-./stk "n" a 
+`./stk "n"` a 
+
 -a but in a non-human format
 
 ### Equality
 
-./stk "=" a b
+`./stk "=" a` b
+
 if a = b print 1 else 0
 Everything is equal in the eyes of assembler
 
 
 ### Greater-than
 
-./stk ">" a b
+`./stk ">"` a b
+
 if a > b print 1 else print 0
 
 
 ### Lesser-than
 
-./stk "<" a b
+`./stk "<" a` b
+
 if a < b print 1 else print 0
 
 
 ### Bitwise AND
 
-./stk "&" a b
+`./stk "&" a` b
+
 AND operation
 
 ### Bitwise OR
 
-./stk "|" a b
+`./stk "|" a` b
+
 OR operation
 
 
 ### Bitwise NOT
 
-./stk "~" a 
+`./stk "~" a` 
+
 NOT operation
 
 
 ### Tests
 
 Bash tests written with bats
+
 https://github.com/bats-core/bats-core
 
 `make test`
@@ -98,7 +106,9 @@ https://github.com/bats-core/bats-core
 ### Why ?
 
 Even old New York was once New Amsterdam
+
 Why they changed it I can't say
+
 People just liked it better that way
 
 

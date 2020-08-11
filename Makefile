@@ -11,8 +11,9 @@ all: stk
 stk: $(OBJ)
 	$(LINKER) -o stk $(OBJ)
 
+.PHONY: test
 test:
-	bats stk.bats
+	bats test/stk.bats
 
 .PHONY: clean
 clean:
